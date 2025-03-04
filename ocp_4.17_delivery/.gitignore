@@ -1,0 +1,7 @@
+# Ignore directories
+plugins/*
+./plugins/*
+*.zip
+*.terraform*
+*.tfstate
+*.tfstate*
