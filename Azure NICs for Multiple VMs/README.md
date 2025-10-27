@@ -81,11 +81,17 @@ terraform destroy
 🧩 Key Features
 
 ✅ Creates Resource Group, VNet, and Subnet
+
 ✅ Configures Network Security Groups with inbound/outbound rules
+
 ✅ Deploys multiple Windows VMs (scalable via vm_count)
+
 ✅ Each VM receives a unique static IP automatically calculated
+
 ✅ Uses cidrhost() to avoid manual IP assignment (no DHCP required)
+
 ✅ Enforces strong admin password validation
+
 ✅ Supports full tag management for cost tracking and organization
 
 🏗️ Architecture Overview
