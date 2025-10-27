@@ -25,8 +25,8 @@ resource "azurerm_subnet" "my_zone" {
 # Network Security Groups
 resource "azurerm_network_security_group" "my_zone" {
   name                = "${var.resource_prefix}-${var.environment}-my_zone-nsg"
-  location            = data.azurerm_resource_group.main.location
-  resource_group_name = data.azurerm_resource_group.main.name
+  location            = azurerm_resource_group.main.location
+  resource_group_name = azurerm_resource_group.main.name
   tags                = var.default_tags
 
   # Allow internal VNet communication
