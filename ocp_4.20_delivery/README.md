@@ -27,72 +27,79 @@ ocp_4.20_delivery/
 ### OpenShift Clusters
 
 dcdev: Development cluster configuration
+
 dcprd: Production cluster configuration
 
 ### Supporting Services
 GitLab: Source code management and CI/CD
+
 Nexus: Artifact repository manager
+
 NGINX: Reverse proxy and load balancing
 
 ## Prerequisites
 Terraform >= 1.0
+
 Valid cloud provider credentials
+
 Network access to target infrastructure
+
 Required Terraform providers configured
+
 # Usage
 
 ## 1. OpenShift Cluster Deployment
-``
+```
 cd ocp/
-``
+```
 
-``
+```
 terraform init
-``
+```
 
-``
+```
 terraform plan
-``
+```
 
-``
+```
 terraform apply
-``
+```
 
 ## 2. GitLab Provisioning
-``
+```
 cd gitlab/
-``
+```
 
-``
+```
 terraform init
-``
+```
 
-``
+```
 terraform plan
-``
+```
 
-``
+```
 terraform apply
-``
+```
 
 
 ## 3. Nexus Repository Setup
 
-``
+```
 cd nexus/
-``
+```
 
-``
+```
 terraform init
-``
+```
 
-``
+```
 terraform plan
-``
+```
 
-``
+```
 terraform apply
-``
+```
 
 ## Configuration
 Each component has its own `terraform.tfvars` file for environment-specific configuration:
