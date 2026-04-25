@@ -121,12 +121,11 @@ Validates port availability before service deployment using `check_available_por
 sshpass -p 'P@$$w0rd' ssh -o StrictHostKeyChecking=no rootuser@$ssh_host
 #           ^^^^^^^^                                  ^^^^^^^^
 #           password                                  username
+```
 
 Replace `P@$$w0rd` with your actual password and `rootuser` with your SSH username.
 
 **Security Note**: Consider using SSH keys instead of hardcoded passwords for production environments.
-
-```
 
 ### nginx_template
 Generates NGINX configuration templates for service routing.
