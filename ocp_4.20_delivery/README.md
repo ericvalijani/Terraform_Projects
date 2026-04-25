@@ -126,6 +126,8 @@ Replace `P@$$w0rd` with your actual password and `rootuser` with your SSH userna
 
 **Security Note**: Consider using SSH keys instead of hardcoded passwords for production environments.
 
+```
+
 ### nginx_template
 Generates NGINX configuration templates for service routing.
 
