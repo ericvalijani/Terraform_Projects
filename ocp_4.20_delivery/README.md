@@ -26,16 +26,16 @@ ocp_4.20_delivery/
 ## Components
 ### OpenShift Clusters
 
-dcdev: Development cluster configuration
+**dcdev**: Development cluster configuration
 
-dcprd: Production cluster configuration
+**dcprd**: Production cluster configuration
 
 ### Supporting Services
-GitLab: Source code management and CI/CD
+**GitLab**: Source code management and CI/CD
 
-Nexus: Artifact repository manager
+**Nexus**: Artifact repository manager
 
-NGINX: Reverse proxy and load balancing
+**NGINX**: Reverse proxy and load balancing
 
 ## Prerequisites
 Terraform >= 1.0
