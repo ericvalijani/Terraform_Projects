@@ -45,12 +45,15 @@ Required Terraform providers configured
 ``
 cd ocp/
 ``
+
 ``
 terraform init
 ``
+
 ``
 terraform plan
 ``
+
 ``
 terraform apply
 ``
@@ -58,28 +61,35 @@ terraform apply
 ## 2. GitLab Provisioning
 ``
 cd gitlab/
+``
 
 ``
 terraform init
 ``
+
 ``
 terraform plan
 ``
+
 ``
 terraform apply
 ``
 
 
 ## 3. Nexus Repository Setup
+
 ``
 cd nexus/
 ``
+
 ``
 terraform init
 ``
+
 ``
 terraform plan
 ``
+
 ``
 terraform apply
 ``
@@ -88,7 +98,9 @@ terraform apply
 Each component has its own `terraform.tfvars` file for environment-specific configuration:
 
 `ocp/terraform.tfvars` - Cluster settings
+
 `gitlab/terraform.tfvars` - GitLab configuration
+
 `nexus/terraform.tfvars` - Nexus settings
 
 ## Modules
