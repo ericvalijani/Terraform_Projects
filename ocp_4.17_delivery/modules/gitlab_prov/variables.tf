@@ -6,22 +6,6 @@ variable "project_name" {
 
 #######################################
 ### Section for GitLab Info ###
-
-variable "gitlab_url" {
-  type        = string
-  description = "URL to access gitlab web page"
-}
-
-variable "gitlab_token" {
-  type        = string
-  description = "token key to access gitlab server"
-}
-
-variable "gitlab_ssl" {
-  type        = bool
-  description = "if you are using self sign certificate, set to true"
-}
-
 variable "gitlab_visibility" {
   type        = string
   description = "choose if your project is public or private"
@@ -42,5 +26,3 @@ variable "gitlab_access_level" {
   description = "Choose user's access level"
   default     = "maintainer"
 }
-
-

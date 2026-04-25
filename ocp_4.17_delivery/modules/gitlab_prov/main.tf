@@ -1,12 +1,5 @@
 # Saleh Miri #
 ### Section for Gitlab ###
-
-provider "gitlab" {
-  base_url = var.gitlab_url
-  token    = var.gitlab_token
-  insecure = var.gitlab_ssl
-}
-
 resource "gitlab_group" "group" {
   name        = "${var.project_name}-group"
   path        = "${var.project_name}-group"
@@ -45,4 +38,5 @@ resource "gitlab_group_membership" "admin" {
   access_level = "owner"
   expires_at   = null
 }
+
 

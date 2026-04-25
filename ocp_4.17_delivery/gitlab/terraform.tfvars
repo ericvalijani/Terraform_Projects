@@ -1,12 +1,7 @@
-project_name        = "test-project"
+project_name        = "hrbotapp"
 gitlab_visibility   = "private"
-gitlab_members      = ["s.miri"]
+gitlab_members      = [  ]
 gitlab_access_level = "maintainer"
+gitlab_admins       = ["saleh.miri" ]
 
-############################
-# Do Not Touch below items #
-gitlab_url    = "https://10.1.1.9/"
-gitlab_token  = "glpat-tLpXaWxWr"
-gitlab_ssl    = true
-gitlab_admins = ["david", ]
 

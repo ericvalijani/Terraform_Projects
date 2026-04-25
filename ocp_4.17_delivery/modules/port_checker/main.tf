@@ -5,3 +5,4 @@ resource "null_resource" "check_ports" {
     EOT
   }
 }
+

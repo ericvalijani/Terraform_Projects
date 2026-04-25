@@ -12,3 +12,4 @@ variable "ssh_host" {
   description = "SSH host for connecting to the remote server"
   type        = string
 }
+

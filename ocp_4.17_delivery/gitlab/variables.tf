@@ -4,22 +4,27 @@ variable "project_name" {
   description = "Name of the project"
 }
 
+# Vault Configuration
+variable "vault_addr" {
+  description = "vault url"
+  type        = string
+  default     = "https://vault.salehmiri.ir:8200"
+  sensitive   = true
+}
+
+variable "vault_token" {
+  description = "vault token located in environment"
+  type        = string
+  default     = "hvs.s6jitXoZR0gvdfvdfbtHUMejbmjmjfhbnHMggJtj"
+  sensitive   = true
+}
+
 #######################################
 ### Section for GitLab Info ###
-
-variable "gitlab_url" {
-  type        = string
-  description = "URL to access gitlab web page"
-}
-
-variable "gitlab_token" {
-  type        = string
-  description = "token key to access gitlab server"
-}
-
 variable "gitlab_ssl" {
   type        = bool
   description = "if you are using self sign certificate, set to true"
+  default     = true
 }
 
 variable "gitlab_visibility" {
@@ -42,3 +47,4 @@ variable "gitlab_access_level" {
   description = "Choose user's access level"
   default     = "maintainer"
 }
+

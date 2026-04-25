@@ -1,18 +1,16 @@
-project_name        = "salehmiri"
-project_description = "Project for Saleh Miri"
-start_port          = 5000
-end_port            = 6000
+project_name        = "autoapp"
+project_description = "Project for automation"
+start_port          = 8100
+end_port            = 8199
 bs_quota            = 10240
 
-### nexus login info ###
-# ssh host is the fqdn name
-ssh_host            = "12.7.2.11"
-ssh_host_port       = 8091
+ssh_host            = "repo.salehmiri.ir"
+ssh_host_port       = 9081
 
 # for ssh login
-remote_user         = "root"
-remote_pass         = "saleh@miri"
+remote_user         = "rootuser"
+remote_pass         = "P@$$w0rd"
 
 # for web login
 nexus_user          = "admin"
-nexus_pass          = "saleh@miri"
+nexus_pass          = "P@$$w0rdGu!"

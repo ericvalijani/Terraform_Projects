@@ -4,11 +4,6 @@ variable "project_name" {
   description = "Name of the project"
 }
 
-variable "project_description" {
-  type        = string
-  description = "description about the project"
-}
-
 ### Section for free port and Nexus ###
 variable "start_port" {
   description = "Starting port number for the range"
@@ -53,4 +48,8 @@ variable "nexus_user" {
 variable "nexus_pass" {
   description = "nexus server password for web GUI"
   type        = string
+}
+
+variable "project_description" {
+  type = string
 }

@@ -13,11 +13,6 @@ variable "projectname" {
   type        = string
 }
 
-variable "ssh_host" {
-  description = "the host for apply on nexus servers"
-  type        = string
-}
-
 variable "remote_user" {
   description = "remote uer for connecting to the nexus servers"
   type        = string
@@ -25,5 +20,10 @@ variable "remote_user" {
 
 variable "remote_pass" {
   description = "password for remote user on nexus server"
+  type        = string
+}
+
+variable "ssh_host" {
+  description = "nexus host ip or name for connecting"
   type        = string
 }

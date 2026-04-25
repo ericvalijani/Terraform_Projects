@@ -1,14 +1,13 @@
 resource "null_resource" "upload_nginx_config" {
-
   provisioner "file" {
     source      = var.sourcefile
     destination = var.destination
 
     connection {
-      type        = "ssh"
-      host        = var.ssh_host
-      user        = var.remote_user
-      password    = var.remote_pass
+      type     = "ssh"
+      host     = var.ssh_host
+      user     = var.remote_user
+      password = var.remote_pass
     }
   }
 
@@ -18,10 +17,11 @@ resource "null_resource" "upload_nginx_config" {
     ]
 
     connection {
-      type        = "ssh"
-      host        = var.ssh_host
-      user        = var.remote_user
-      password    = var.remote_pass
+      type     = "ssh"
+      host     = var.ssh_host
+      user     = var.remote_user
+      password = var.remote_pass
     }
   }
 }
+
