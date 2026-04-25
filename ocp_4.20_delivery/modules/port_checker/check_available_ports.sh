@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Tartibe ina kheili moheme
+# Sequence is very importnat
 start_port=$1
 end_port=$2
 ssh_host=$3

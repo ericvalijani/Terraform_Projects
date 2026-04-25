@@ -115,6 +115,17 @@ Each component has its own `terraform.tfvars` file for environment-specific conf
 ### port_checker
 Validates port availability before service deployment using `check_available_ports.sh`.
 
+**⚠️ IMPORTANT**: Before running the project, you **must** edit the credentials in `modules/port_checker/check_available_ports.sh`:
+```bash
+# Line 7 - Update these credentials:
+sshpass -p 'P@$$w0rd' ssh -o StrictHostKeyChecking=no rootuser@$ssh_host
+#           ^^^^^^^^                                  ^^^^^^^^
+#           password                                  username
+
+Replace `P@$$w0rd` with your actual password and `rootuser` with your SSH username.
+
+**Security Note**: Consider using SSH keys instead of hardcoded passwords for production environments.
+
 ### nginx_template
 Generates NGINX configuration templates for service routing.
 
